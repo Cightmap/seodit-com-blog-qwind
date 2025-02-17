@@ -30,7 +30,7 @@ export default component$(() => {
           {
             title: "Qwik + Tailwind CSS Integration",
             description:
-              "XXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxXXXXXXXXXXXXA seamless integration between two great frameworks that offer high productivity, performance and versatility.",
+              "XXXXXXXXXXXXXXXXXXXXXXXXxx44444444444xxxxxxxXXXXXXXXXXXXA seamless integration between two great frameworks that offer high productivity, performance and versatility.",
             icon: IconBrandTailwind,
           },
           {
