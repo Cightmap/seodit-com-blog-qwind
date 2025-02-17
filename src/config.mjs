@@ -25,7 +25,6 @@ export const SITE = {
     "SuperCight Domains",
     "PublishInk Agency",
     "SEO Long-Form Blog Content Creation Services",
-    "Content Creation Subscription Packages"
   ],
 
   // Open Graph metadata for better social sharing
