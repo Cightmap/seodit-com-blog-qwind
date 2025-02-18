@@ -7,6 +7,7 @@ import type { Post } from "~/types";
 import md from "markdown-it";
 
 import { fetchPosts, findPostBySlug } from "~/utils/posts";
+import { SITE } from "~/config.mjs"; // Import global metadata
 
 export const useGetPostBySlug = routeLoader$(async ({ params, status }) => {
   const post = await findPostBySlug(params.slug);
@@ -20,7 +21,6 @@ export const useGetPostBySlug = routeLoader$(async ({ params, status }) => {
 
 export default component$(() => {
   const signal = useGetPostBySlug();
-
   const post = signal.value as Post;
 
   return (
@@ -36,7 +36,6 @@ export default component$(() => {
                 timeZone: "UTC",
               })}
             </time>
-            {/* ~{" "} {Math.ceil(post.readingTime)} min read */}
           </p>
           <h1 class="leading-tighter font-heading mx-auto mb-8 max-w-3xl px-4 text-4xl font-bold tracking-tighter sm:px-6 md:text-5xl">
             {post.title}
@@ -80,11 +79,47 @@ export const head: DocumentHead = ({ resolveValue }) => {
   const post = resolveValue(useGetPostBySlug) as Post;
 
   return {
-    title: `${post.title} — Qwind`,
+    title: `${post.title} | ${SITE.title}`, // Uses SITE.title instead of "Qwind"
     meta: [
       {
         name: "description",
-        content: post.excerpt,
+        content: post.excerpt || SITE.description, // Uses post excerpt or falls back to global description
+      },
+      {
+        property: "og:title",
+        content: `${post.title} | ${SITE.openGraph.title}`,
+      },
+      {
+        property: "og:description",
+        content: post.excerpt || SITE.openGraph.description,
+      },
+      {
+        property: "og:image",
+        content: post.image || SITE.openGraph.image, // Uses post image or falls back to SITE image
+      },
+      {
+        property: "og:url",
+        content: `${SITE.origin}/blog/${post.slug}`,
+      },
+      {
+        name: "twitter:card",
+        content: SITE.twitter.cardType,
+      },
+      {
+        name: "twitter:title",
+        content: `${post.title} | ${SITE.title}`,
+      },
+      {
+        name: "twitter:description",
+        content: post.excerpt || SITE.twitter.description,
+      },
+      {
+        name: "twitter:image",
+        content: post.image || SITE.openGraph.image,
+      },
+      {
+        name: "linkedin:profile",
+        content: SITE.linkedin.profileUrl,
       },
     ],
   };
