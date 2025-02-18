@@ -2,9 +2,7 @@
 
 ## Pages
 
-- [Services](#)
-- [Porfolio](#)
-- [About us](#)
+- [About us](/about)
 - [Terms](/terms)
 - [Privacy](/privacy)
 

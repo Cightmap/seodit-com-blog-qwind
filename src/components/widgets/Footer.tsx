@@ -9,47 +9,21 @@ import IconGithub from "~/components/icons/IconGithub"
 export default component$(() => {
   const links = [
     {
-      title: "Product",
+      title: "SEOdit.com",
       items: [
         { title: "Features", href: "#" },
-        { title: "Security", href: "#" },
-        { title: "Team", href: "#" },
-        { title: "Enterprise", href: "#" },
-        { title: "Customer stories", href: "#" },
-        { title: "Pricing", href: "#" },
-        { title: "Resources", href: "#" },
+        { title: "About", href: "/about/" },
+        { title: "Blog", href: "/blog/" },
+        { title: "Privacy", href: "/privacy" },
       ],
     },
     {
-      title: "Platform",
+      title: "SuperCight Domains",
       items: [
-        { title: "Developer API", href: "#" },
-        { title: "Partners", href: "#" },
-        { title: "Atom", href: "#" },
-        { title: "Electron", href: "#" },
-        { title: "Qwind Desktop", href: "#" },
-      ],
-    },
-    {
-      title: "Support",
-      items: [
-        { title: "Docs", href: "#" },
-        { title: "Community Forum", href: "#" },
-        { title: "Professional Services", href: "#" },
-        { title: "Skills", href: "#" },
-        { title: "Status", href: "#" },
-      ],
-    },
-    {
-      title: "Company",
-      items: [
-        { title: "About", href: "#" },
-        { title: "Blog", href: "#" },
-        { title: "Careers", href: "#" },
-        { title: "Press", href: "#" },
-        { title: "Inclusion", href: "#" },
-        { title: "Social Impact", href: "#" },
-        { title: "Shop", href: "#" },
+        { title: "SuperCight.com", href: "https://supercight.com" },
+        { title: "About", href: "https://supercight.com/about" },
+        { title: "Blog", href: "/supercight.com/blog" },
+        { title: "Shop", href: "/supercight.com/shop" },
       ],
     },
   ];
@@ -61,7 +35,7 @@ export default component$(() => {
     {
       label: "Github",
       icon: IconGithub,
-      href: "https://github.com/onwidget/qwind",
+      href: "https://github.com/Cightmap/seodit-com-blog-qwind",
     },
   ];
 
@@ -72,12 +46,11 @@ export default component$(() => {
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-2">
               <Link class="inline-block font-bold text-xl" href={"/"}>
-                Qwind
+                SEOdit.com
               </Link>
             </div>
             <div class="text-sm text-gray-600 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi
-              risus tempus nulla
+            Whether used for an SEO tool, SaaS platform, agency, or AI-powered search solution, SEOdIt.com is ready to become a powerhouse brand in the billion-dollar search industry.
             </div>
           </div>
           {links.map(({ title, items }, index) => (
@@ -119,9 +92,9 @@ export default component$(() => {
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
             <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
             Made by{" "}
-            <a class="text-secondary-800 underline dark:text-gray-200" href="https://onwidget.com/">
+            <a class="text-secondary-800 underline dark:text-gray-200" href="https://supercight.com/">
               {" "}
-              onWidget
+              SuperCight Domains
             </a>{" "}
             · All rights reserved.
           </div>
