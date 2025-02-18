@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
-import { SITE } from "~/config.mjs"; // Import global metadata
+import { SITE } from "~/config.mjs";
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
@@ -26,7 +26,7 @@ export const RouterHead = component$(() => {
       <meta property="og:image" content={head.meta.find(m => m.property === 'og:image')?.content || SITE.openGraph.image} />
       <meta property="og:url" content={head.meta.find(m => m.property === 'og:url')?.content || SITE.openGraph.url} />
       <meta name="twitter:card" content={head.meta.find(m => m.name === 'twitter:card')?.content || SITE.twitter.cardType} />
-      <meta name="twitter:title" content={head.meta.find(m => m.name === 'twitter:title')?.content || SITE.twitter.title} />
+      <meta name="twitter:title" content={head.meta.find(m => m.name === 'twitter:title')?.content || SITE.title} />
       <meta name="linkedin:profile" content={SITE.linkedin.profileUrl} />
 
       {/* Render Dynamic Metadata */}
