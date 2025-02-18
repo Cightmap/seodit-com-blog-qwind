@@ -32,7 +32,7 @@ export const SITE = {
     title: "SEOdit.com - Premium SEO Domain & Blog",
     description: "SEOdit.com is a valuable digital asset for SEO agencies and online businesses. Learn more and inquire today.",
     url: "https://seodit.com",
-    image: "/images/seodit-preview.jpg", // Ensure this image exists in `public/images/`
+    image: "/images/seodit-preview.jpg",
     type: "website",
     locale: "en_US",
     siteName: "SEOdit.com",
