@@ -1,0 +1,137 @@
+.
+├── LICENSE.md
+├── README.md
+├── SEOdit.com-Qwind-project-structure.txt
+├── adapters
+│   └── static
+│       └── vite.config.ts
+├── astro.config.mjs
+├── deprecated
+├── netlify.toml
+├── node_modules
+│   ├── @builder.io
+│   │   ├── qwik -> ../.pnpm/@builder.io+qwik@1.12.0_vite@5.4.14_@types+node@22.13.2_lightningcss@1.29.1_terser@5.39.0_/node_modules/@builder.io/qwik
+│   │   └── qwik-city -> ../.pnpm/@builder.io+qwik-city@1.12.0_acorn@8.14.0_rollup@4.34.6_typescript@5.5.4_vite@5.4.14_@t_d1048660af22feae5ab7f76b8a5886a9/node_modules/@builder.io/qwik-city
+│   ├── @divriots
+│   │   └── jampack -> ../.pnpm/@divriots+jampack@0.25.0_react-dom@16.14.0_react@16.14.0__react@16.14.0/node_modules/@divriots/jampack
+│   ├── @fontsource-variable
+│   │   └── inter -> ../.pnpm/@fontsource-variable+inter@5.1.1/node_modules/@fontsource-variable/inter
+│   ├── @tailwindcss
+│   │   └── typography -> ../.pnpm/@tailwindcss+typography@0.5.16_tailwindcss@3.4.10/node_modules/@tailwindcss/typography
+│   ├── @types
+│   │   ├── eslint -> ../.pnpm/@types+eslint@8.56.12/node_modules/@types/eslint
+│   │   ├── markdown-it -> ../.pnpm/@types+markdown-it@14.1.2/node_modules/@types/markdown-it
+│   │   └── node -> ../.pnpm/@types+node@22.13.2/node_modules/@types/node
+│   ├── @typescript-eslint
+│   │   ├── eslint-plugin -> ../.pnpm/@typescript-eslint+eslint-plugin@7.18.0_@typescript-eslint+parser@7.18.0_eslint@8.57.1__ac6de590162b964d5ab9a3b0eb25b761/node_modules/@typescript-eslint/eslint-plugin
+│   │   └── parser -> ../.pnpm/@typescript-eslint+parser@7.18.0_eslint@8.57.1_typescript@5.5.4/node_modules/@typescript-eslint/parser
+│   ├── @unpic
+│   │   └── qwik -> ../.pnpm/@unpic+qwik@0.0.46_@builder.io+qwik@1.12.0_vite@5.4.14_@types+node@22.13.2_lightningcss@1.29.1_terser@5.39.0__/node_modules/@unpic/qwik
+│   ├── autoprefixer -> .pnpm/autoprefixer@10.4.20_postcss@8.5.2/node_modules/autoprefixer
+│   ├── eslint -> .pnpm/eslint@8.57.1/node_modules/eslint
+│   ├── eslint-plugin-qwik -> .pnpm/eslint-plugin-qwik@1.12.0_eslint@8.57.1_typescript@5.5.4/node_modules/eslint-plugin-qwik
+│   ├── gray-matter -> .pnpm/gray-matter@4.0.3/node_modules/gray-matter
+│   ├── markdown-it -> .pnpm/markdown-it@14.1.0/node_modules/markdown-it
+│   ├── node-fetch -> .pnpm/node-fetch@3.3.2/node_modules/node-fetch
+│   ├── postcss -> .pnpm/postcss@8.5.2/node_modules/postcss
+│   ├── prettier -> .pnpm/prettier@3.5.1/node_modules/prettier
+│   ├── prettier-plugin-tailwindcss -> .pnpm/prettier-plugin-tailwindcss@0.6.11_prettier@3.5.1/node_modules/prettier-plugin-tailwindcss
+│   ├── tailwind-merge -> .pnpm/tailwind-merge@2.6.0/node_modules/tailwind-merge
+│   ├── tailwindcss -> .pnpm/tailwindcss@3.4.10/node_modules/tailwindcss
+│   ├── typescript -> .pnpm/typescript@5.5.4/node_modules/typescript
+│   ├── vite -> .pnpm/vite@5.4.14_@types+node@22.13.2_lightningcss@1.29.1_terser@5.39.0/node_modules/vite
+│   └── vite-tsconfig-paths -> .pnpm/vite-tsconfig-paths@5.1.4_typescript@5.5.4_vite@5.4.14_@types+node@22.13.2_lightningcss@1.29.1_terser@5.39.0_/node_modules/vite-tsconfig-paths
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.cjs
+├── public
+│   ├── _headers
+│   ├── favicon.svg
+│   ├── images
+│   │   └── placeholder-1024x640.png
+│   ├── manifest.json
+│   └── robots.txt
+├── sandbox.config.json
+├── screenshot.jpg
+├── src
+│   ├── assets
+│   │   ├── images
+│   │   │   ├── hero.jpg
+│   │   │   └── logo.png
+│   │   └── styles
+│   │       └── global.css
+│   ├── components
+│   │   ├── common
+│   │   │   ├── DarkThemeLauncher.tsx
+│   │   │   ├── Logo.tsx
+│   │   │   ├── RouterHead.tsx
+│   │   │   ├── ToggleMenu.tsx
+│   │   │   └── ToggleTheme.tsx
+│   │   ├── icons
+│   │   │   ├── IconApps.tsx
+│   │   │   ├── IconArrowDownRight.tsx
+│   │   │   ├── IconBrandGoogle.tsx
+│   │   │   ├── IconBrandTailwind.tsx
+│   │   │   ├── IconBulb.tsx
+│   │   │   ├── IconChevronDown.tsx
+│   │   │   ├── IconFacebook.tsx
+│   │   │   ├── IconGithub.tsx
+│   │   │   ├── IconInstagram.tsx
+│   │   │   ├── IconMenu.tsx
+│   │   │   ├── IconMoon.tsx
+│   │   │   ├── IconRocket.tsx
+│   │   │   ├── IconStar.tsx
+│   │   │   ├── IconSun.tsx
+│   │   │   └── IconTwitter.tsx
+│   │   ├── ui
+│   │   │   ├── Headline.tsx
+│   │   │   └── ItemGrid.tsx
+│   │   └── widgets
+│   │       ├── CallToAction.tsx
+│   │       ├── FAQs.tsx
+│   │       ├── Features.tsx
+│   │       ├── Footer.tsx
+│   │       ├── Header.tsx
+│   │       ├── Hero.tsx
+│   │       ├── Stats.tsx
+│   │       └── Steps.tsx
+│   ├── config.mjs
+│   ├── content
+│   │   └── post
+│   │       ├── demo-post-1.md
+│   │       ├── demo-post-2.md
+│   │       ├── demo-post-3.md
+│   │       ├── demo-post-4.md
+│   │       ├── demo-post-5.md
+│   │       └── demo-post-6.md
+│   ├── entry.dev.tsx
+│   ├── entry.preview.tsx
+│   ├── entry.ssr.tsx
+│   ├── root.tsx
+│   ├── routes
+│   │   ├── (blog)
+│   │   │   └── blog
+│   │   │       ├── [slug]
+│   │   │       │   └── index.tsx
+│   │   │       └── index.tsx
+│   │   ├── (markdown)
+│   │   │   ├── layout.tsx
+│   │   │   ├── privacy
+│   │   │   │   └── index.md
+│   │   │   └── terms
+│   │   │       └── index.md
+│   │   ├── 404.tsx
+│   │   ├── index.tsx
+│   │   ├── layout.tsx
+│   │   ├── menu.md
+│   │   └── service-worker.ts
+│   ├── types.ts
+│   └── utils
+│       ├── posts.ts
+│       └── qwikSerialized.js
+├── tailwind.config.js
+├── tsconfig.json
+├── vercel.json
+└── vite.config.ts
+
+58 directories, 77 files
