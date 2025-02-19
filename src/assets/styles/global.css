@@ -41,7 +41,7 @@
  
  /* Add this to the bottom of your main CSS file (e.g., style.css, global.css) */
  .footer-left-column p {
-   margin-bottom: 10.5rem; /* Adds space between the footer paragraphs */
+   margin-bottom: 1.5rem; /* Adds space between the footer paragraphs */
  }
  
  .footer-left-column .footer-item {
@@ -53,3 +53,9 @@
    padding-bottom: 1rem; /* Adds padding at the bottom of the footer-left-column */
  }
  
+ .footer-column {
+  flex: 1;
+  min-width: 200px; /* Ensures that columns don't get too narrow */
+  max-width: 300px; /* Controls how wide the columns can get */
+  padding: 10px;
+} 
