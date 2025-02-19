@@ -83,7 +83,7 @@ export default component$(() => {
             </div>
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               <a
-                href="https://github.com/onwidget/qwind"
+                href="/contact"
                 class="btn btn-primary ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto"
               >
                 Download

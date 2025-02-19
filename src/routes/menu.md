@@ -1,9 +1,17 @@
 # Menu
 
-## Pages
+## SEOdit Pages
 
-- [About us](/about)
+- [About](/about)
+- [Contact](/contact)
 - [Terms](/terms)
 - [Privacy](/privacy)
 
-## [Blog](/blog)
+## [Blog]
+
+- [SEOdit Blog](/blog)
+- [PublishInk Content Creation Services](https://publishink.agency/)
+
+## Domain Sales
+
+- [Domain Sales Gallery](https://supercight.com/sales-gallery)

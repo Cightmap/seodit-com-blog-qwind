@@ -11,19 +11,36 @@ export default component$(() => {
     {
       title: "SEOdit.com",
       items: [
-        { title: "Features", href: "#" },
-        { title: "About", href: "/about/" },
-        { title: "Blog", href: "/blog/" },
+        { title: "Home", href: "/" },
+        { title: "About", href: "/about" },
+        { title: "Contact", href: "/contact" },
+        { title: "Blog", href: "/blog" },
         { title: "Privacy", href: "/privacy" },
+        { title: "Terms", href: "/terms" },
+        { title: "Sitemap", href: "/sitemap" },
       ],
     },
     {
       title: "SuperCight Domains",
       items: [
-        { title: "SuperCight.com", href: "https://supercight.com" },
+        { title: "Home", href: "https://supercight.com" },
         { title: "About", href: "https://supercight.com/about" },
-        { title: "Blog", href: "/supercight.com/blog" },
-        { title: "Shop", href: "/supercight.com/shop" },
+        { title: "Contact", href: "https://supercight.com/contact" },
+        { title: "Blog", href: "https://supercight.com/blog" },
+        { title: "Shop Domains", href: "https://supercight.com/shop" },
+      ],
+    },
+    {
+      title: "PublishInk Agency",
+      items: [
+        { title: "Home", href: "https://publishink.agency" },
+        { title: "About", href: "https://publishink.agency/about" },
+        { title: "Contact", href: "https://publishink.agency/contact" },
+        { title: "Blog", href: "https://publishink.agency/blog" },
+        { title: "Blogging & Investment Packages", href: "https//publishink.agency/content-services" },
+        { title: "Marketing & Revenue Packages", href: "https//publishink.agency/affiliate-marketing-services" },
+        { title: "SEO & Performance Packages", href: "https//publishink.agency/seo-services" },
+        { title: "Backlinking & Growth Packages", href: "https//publishink.agency/backlinking-services" },
       ],
     },
   ];
@@ -52,6 +69,20 @@ export default component$(() => {
             <div class="text-sm text-gray-600 dark:text-gray-400">
             Whether used for an SEO tool, SaaS platform, agency, or AI-powered search solution, SEOdIt.com is ready to become a powerhouse brand in the billion-dollar search industry.
             </div>
+            <div class="mb-2">
+              <Link class="inline-block font-bold text-xl" href={"/"}>
+                SuperCight Domains
+              </Link>
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">
+            We understand that a domain isn’t just a web address—it’s a brand’s first impression and competitive edge. Whether you’re a startup, an investor, or an established business, SuperCight Domains provides expertly curated domains that align with your industry, innovation, and vision.            </div>
+            <div class="mb-2">
+              <Link class="inline-block font-bold text-xl" href={"/"}>
+                PublishInk Agency
+              </Link>
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">
+            At PublishInk Agency, we don’t just write blog content—we craft high-value, long-form articles designed to engage, inform, and convert. Our subscription-based publishing services offer fully customizable pricing based on your content volume and publishing frequency, ensuring you get precisely what your brand needs.            </div>
           </div>
           {links.map(({ title, items }, index) => (
             <div key={index} class="col-span-6 md:col-span-3 lg:col-span-2">
@@ -91,10 +122,10 @@ export default component$(() => {
 
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
             <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-            Made by{" "}
+            A{" "}
             <a class="text-secondary-800 underline dark:text-gray-200" href="https://supercight.com/">
               {" "}
-              SuperCight Domains
+              SuperCight Domain
             </a>{" "}
             · All rights reserved.
           </div>

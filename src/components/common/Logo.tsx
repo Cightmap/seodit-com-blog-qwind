@@ -10,9 +10,9 @@ export default component$(() => (
       class="inline-block mr-1"
       width={32}
       height={32}
-      alt="Qwind Logo"
+      alt="SuperCight Domains Logo"
       loading="lazy"
     />
-    Qwind
+    SEOdit.com A SuperCight Domain
   </span>
 ));
