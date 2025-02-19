@@ -3,6 +3,7 @@
 /lib
 /lib-types
 /server
+/deprecated/*
 
 # Development
 node_modules

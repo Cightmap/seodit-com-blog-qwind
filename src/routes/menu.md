@@ -7,9 +7,9 @@
 - [Terms](/terms)
 - [Privacy](/privacy)
 
-## [Blog]
+## Blog
 
-- [SEOdit Blog](/blog)
+- [SEOdit Blog Gallry](/blog)
 - [PublishInk Content Creation Services](https://publishink.agency/)
 
 ## Domain Sales
