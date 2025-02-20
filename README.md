@@ -1,200 +1,151 @@
-# 💠 Qwind
+README.md
+markdown
+# 🌟 SEOdit.com - Premium SEO Domain Template
 
-**Qwind** is a free and open-source template to make your website using **[Qwik](https://qwik.builder.io/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
+**SEOdit.com** is a premium domain for sale, with it's website built as a showcase using **Astro 5.0** and a customized Qwind template. Developed by **[SuperCight Domains](https://supercight.com)**, this site features a fast, modern design with a blog powered by **[PublishInk Agency](https://publishink.agency)** to drive organic traffic and boost domain authority. It’s an ideal asset for SEO professionals or businesses seeking a standout domain that starts with, SEO, one of the hottest keywords on the market today, built right into the name!
+
+This project doubles as a reusable template for SuperCight Domains’ growing portfolio of domain-sales websites, blending cutting-edge tech with strategic content.
+
+## The Bigger Picture
+
+SuperCight Domains acquires and sells premium domains like SEOdit.com, enhancing them with active websites, social handles, blogs, backlinks and affiliate marketing monitization. PublishInk Agency crafts the daily long-form posts to increase traffic, authority, and resale value. SEOdit.com is the first of many other domain name sites to start using these Astro-based templates, with a future gallery on SuperCight.com planned to connect all domain-sales projects.
 
 ## Features
 
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode**.
-- ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports.
-- ✅ **Image optimization** and **Font optimization**.
+- Built with **Astro 5.0** and **Tailwind CSS** for speed and flexibility.
+- Blog-ready with dynamic routing for SEO-rich posts.
+- Hosted free on **Cloudflare Pages**—no server costs!
+- Optimized for SEO and domain value growth.
+- Public GitHub repo serves as a development history and portfolio.
 
 <br>
 
-<img src="./screenshot.jpg" alt="Qwind Theme Screenshot">
+![SEOdit.com Screenshot](./public/images/seodit-preview.jpeg)
 
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/qwind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/qwind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/qwind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/qwind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/qwind)
+[![SuperCight Domains](https://custom-icon-badges.demolab.com/badge/made%20by%20-SuperCight%20Domains-556bf2?style=flat-square&logo=supercight&logoColor=white&labelColor=101827)](https://supercight.com)
+[![License](https://img.shields.io/github/license/supercight/seodit-qwind?style=flat-square&color=dddddd&labelColor=000000)](./LICENSE.md)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/yourusername/seodit-qwind#contributing)
 
 <br>
 
-<details open>
-<summary>Table of Contents</summary>
+## Table of Contents
 
 - [Demo](#demo)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Project Structure](#project-structure)
   - [Commands](#commands)
   - [Configuration](#configuration)
   - [Deploy](#deploy)
-- [Roadmap](#roadmap)
+- [Usage](#usage)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
-
-</details>
 
 <br>
 
 ## Demo
 
-📌 [https://qwind.pages.dev/](https://qwind.pages.dev/)
+📌 [https://seodit-qwind.pages.dev/](https://seodit-qwind.pages.dev/) *(Dev URL until live at SEOdit.com)*
+
+Interested in owning SEOdit.com? [Contact SuperCight Domains](mailto:hello@supercight.com).
 
 <br>
 
-## Getting started
+## Getting Started
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just a extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+Built with Astro 5.0, this project delivers a lightweight, performant site with blog functionality, hosted on Cloudflare Pages via GitHub.
 
-### Project structure
-
-Inside **Qwind** template, you'll see the following folders and files:
-
-```
+### Project Structure
 /
-├── adaptors/
-|   └── static/
-|       └── vite.config.ts
 ├── public/
-│   ├── favicon.svg
-│   ├── manifest.json
+│   ├── favicon.svg          # SEOdit favicon
+│   ├── images/
+│   │   └── seodit-preview.jpeg
 │   └── robots.txt
 ├── src/
 │   ├── assets/
-│   │   ├── images/
-|   |   └── styles/
-|   |       └── global.css
+│   │   ├── images/         # SEOdit logo, hero, blog images
+│   │   └── styles/
 │   ├── components/
-│   │   ├── atoms/
-│   │   ├── core/
-│   │   ├── icons/
-|   |   └── widgets/
-|   |       ├── Hero.tsx
-|   |       ├── Features.tsx
-|   |       └── ...
+│   │   ├── common/         # Logo.tsx, etc.
+│   │   └── widgets/        # Header.tsx, Footer.tsx, Hero.tsx
 │   ├── content/
-│   |   └── blog/
-│   |       ├── post-slug-1.md
-│   |       ├── post-slug-2.md
-│   |       └── ...
+│   │   └── post/           # Blog posts (e.g., keyword-cannibalization.md)
 │   ├── routes/
-│   |   ├── blog/
-│   |   ├── index.tsx
-|   |   ├── layout.tsx
-|   |   ├-- service-worker.ts
-│   |   └-- ...
-│   ├── config.mjs
-│   ├── entry.dev.tsx
-│   ├── entry.preview.tsx
-│   ├── entry.ssr.tsx
-│   └── root.tsx
+│   │   ├── (blog)/blog/    # Blog index and [slug] routing
+│   │   ├── (markdown)/     # About, Privacy, Terms, Contact
+│   │   └── index.tsx       # Homepage
+│   └── config.mjs          # Site config for templating
+├── astro.config.mjs        # Astro setup with Tailwind
 ├── package.json
-└── ...
-```
+└── tailwind.config.js
 
-- `src/routes`: Provides the directory based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
-
-- `src/components`: Recommended directory for components.
-
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
-
-[![Edit Qwind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/qwind/tree/main)
-
-> **Seasoned qwik expert?** Delete this file. Update `config.mjs` and contents. Have fun!
-
-<br>
+- `src/routes`: Handles page and blog routing.
+- `src/content/post`: Stores Markdown blog posts.
+- `public`: Contains static assets.
 
 ### Commands
 
-All commands are run from the root of the project, from a terminal:
+From the project root:
 
-| Command            | Action                                         |
-| :----------------- | :--------------------------------------------- |
-| `npm install`      | Installs dependencies                          |
-| `npm run dev`      | Starts local dev server at `127.0.0.1:5173/`   |
-| `npm run build`    | Build your production site to `./dist/`        |
-| `npm run preview`  | Preview your build locally, before deploying   |
-| `npm run fmt`      | Format codes with Prettier                     |
-| `npm run lint`     | Run Eslint                                     |
-| `npm run qwik ...` | Run CLI commands like `qwik add`, `qwik build` |
-
-<br>
+| Command            | Action                                      |
+| :----------------- | :------------------------------------------ |
+| `npm install`      | Install dependencies                        |
+| `npm run dev`      | Start dev server at `localhost:4321`        |
+| `npm run build`    | Build production site to `./dist/`          |
+| `npm run preview`  | Preview build locally before deploying      |
 
 ### Configuration
 
-Basic configuration file: `./src/config.mjs`
+Edit `src/config.mjs` to customize:
 
 ```javascript
-export const SITE = {
-  name: "Example",
-
-  origin: "https://example.com",
-  basePathname: "/", // Change this if you need to deploy to Github Pages, for example
-  trailingSlash: true, // Generate permalinks with or without "/" at the end
+export const siteConfig = {
+  domain: "SEOdit.com",
+  title: "SEOdit.com - Premium SEO Domain",
+  description: "A high-value domain for sale by SuperCight Domains.",
+  company: "SuperCight Domains",
+  email: "hello@supercight.com",
+  contentBy: "PublishInk Agency",
 };
-```
+Swap assets and config values for other domains.
 
-<br>
 
 ### Deploy
 
-#### Deploy to production (manual)
+- Build: npm run build
+- Push: Auto-deploys to Cloudflare Pages via GitHub.
+- Go Live: Assign SEOdit.com when ready.
+- Clone this repo and tweak siteConfig for new domains.
 
-You can create an optimized production build with:
 
-```shell
-npm run build
-```
+## Usage
 
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
+- Domain Sales: Reuse for sites like AINotified.com or Tree.Institute.
+- Blogging: Add posts to src/content/post/ for traffic growth.
+- Affiliate Income: Embed affiliate links in blog content.
+- Gallery: Link all sites via SuperCight.com’s future gallery.
 
-#### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/qwind)
-
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fqwind)
-
-<br>
-
-## Roadmap
-
-### Base
-
-- [ ] Create utilities to generate permalinks tailored to the domain and base pathname.
-- [ ] Simplify the way to optimize images.
-- [ ] Create component to make SEO simpler and more intuitive.
-- [ ] Create configurable blog with categories, tags and authors using MDX.
-- [ ] Add more frequently used pages (Portfolio, Services, Contact, Docs ...).
-- [ ] Find or create a library to have more icon sources available.
-- [ ] Refactor some code that doesn't follow Qwik conventions yet.
-
-### Advanced
-
-- [ ] Achieve perfect 100% Google Page Speed score.
-- [ ] Insert complex javascript example widget on home page to demonstrate Qwik features.
-- [ ] Create small illustrative admin backend.
-
-<br>
 
 ## Contributing
 
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
+Got ideas or bug reports? Open an issue or pull request to help refine this template!
+
 
 ## Acknowledgements
 
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/qwind/graphs/contributors).
+- Based on the Qwind template by onWidget, customized by SuperCight Domains.
+- Content strategy by PublishInk Agency.
+- Thanks to the Astro community!
+
 
 ## License
 
-**Qwind** is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/qwind/blob/main/LICENSE.md) file for details.
+MIT License—see LICENSE.md (./LICENSE.md).
+
+____________________________________________________________
+
+Contact:  Jason Cline, Owner of SuperCight Domains
+          jason@SuperCight.com (mailto:jason@supercight.com)
+          +1-708-402-8570
+          SuperCight.com | PublishInk.Agency
